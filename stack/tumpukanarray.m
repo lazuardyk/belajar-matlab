@@ -1,7 +1,10 @@
-fprintf('Program Tumpukan dengan Array\n\n')
+clc
+clear
 
 main = 'y';
 while main == 'y'
+    clc
+    fprintf('Program Tumpukan dengan Array\n\n')
     lanjut = 1;
     tumpukan = Stack(100);
     while lanjut == 1

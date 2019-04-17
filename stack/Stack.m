@@ -18,7 +18,7 @@ classdef Stack < handle
             hasil = objek.stack{objek.panjang};
             objek.panjang = objek.panjang - 1;
         end
-        function hasil = peek(objek) % menampilkan paling panjang
+        function hasil = peek(objek) % menampilkan value paling kanan
             hasil = objek.stack{objek.panjang};
         end
         function hasil = display(objek) % menampilkan stack
@@ -26,10 +26,10 @@ classdef Stack < handle
 %             konversi = cell2mat(konten);
 %             hasil = konversi;
         end
-        function hasil = isempty(objek)
+        function hasil = isempty(objek) % mengecek apakah stack kosong
             hasil = ~logical(objek.panjang);
         end
-        function hasil = length(objek)
+        function hasil = length(objek) % menghitung panjang stack
             hasil = objek.panjang;
         end
     end

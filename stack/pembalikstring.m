@@ -1,7 +1,9 @@
-fprintf('Program Pembalik String\n\n')
-
+clc
+clear
 main = 'y';
 while main == 'y'
+    clc
+    fprintf('Program Pembalik String\n\n')
     tumpukan = Stack(100);
     sebelum = input('Silahkan masukkan string:\n','s');
     panjang = length(sebelum);
